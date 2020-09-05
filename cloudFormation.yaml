@@ -27,12 +27,12 @@ Resources:
                   - 's3:GetObject'
                   - 's3:DeleteObject'
                 Resource: 'arn:aws:s3:::FileRepository'
-  RootInstanceProfile:
+  AccessInstanceProfile:
     Type: 'AWS::IAM::InstanceProfile'
     Properties:
       Path: /
       Roles:
-        - !Ref RootRole
+        - !Ref BucketAccessRole
   docEC2Instance:
     Type: 'AWS::EC2::Instance'
     Properties:
@@ -41,7 +41,7 @@ Resources:
       Monitoring: true
       DisableApiTermination: false
       IamInstanceProfile:
-        !Ref RootInstanceProfile
+        !Ref AccessInstanceProfile
   
   FileRepository:
     Type: 'AWS::S3::Bucket'
