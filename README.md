@@ -4,7 +4,7 @@
 
 ## Descrição do Seviço
 
-Foi criado uma Stack com uma Instancia Ec2(dockEC2Instance), um Bucket S3(FileRepository), Uma IAM ROLE(RootRole)
+Foi criado uma Stack com uma Instancia Ec2(dockEC2Instance), um Bucket S3(FileRepository), Uma IAM ROLE(BucketAccessRole)
 com as Policies para dar acesso à gravação e consulta ao Bucket S3.
 
 ## Funcionalidades
