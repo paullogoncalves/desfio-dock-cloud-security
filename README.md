@@ -1,4 +1,4 @@
-# Desfio Dock- Cloud Security
+# Desafio Dock - Cloud Security
 
 > Status do desafio: Concluido
 
@@ -18,7 +18,7 @@ com as Policies para dar acesso à gravação e consulta ao Bucket S3.
   **now=$(date +"%m-%d-%Y-%H-%M-%S")
     curl https://www.dan.me.uk/tornodes --output /temp/Lista_ips_$now.txt
     aws s3 cp /temp/Lista_ips_$now.txt s3://FileRepository**
-
+    
 
  ## Arquivos:
  - listaIpsTor.sh
