@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Resources:
-  RootRole:
+  BucketAccessRole:
     Type: 'AWS::IAM::Role'
     Properties:
       AssumeRolePolicyDocument:
